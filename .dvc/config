@@ -3,4 +3,4 @@
 ['remote "localremote"']
     url = /home/pranav/Desktop/dvc_remote
 ['remote "s3remote"']
-    url = s3://deploymlmodel
+    url = s3://deploymlmodel/data
