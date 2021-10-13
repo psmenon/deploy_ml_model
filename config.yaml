@@ -1,0 +1,18 @@
+main:
+  project_name: Deploy ML Model
+  experiment_name: dev
+data:
+  file_name: "cleaned_census.csv"
+model:
+  version: "0.0.1"
+  model_name: "rfmodel"
+  features:
+    categorical:
+      - "workclass"
+      - "education"
+      - "marital-status"
+      - "occupation"
+      - "relationship"
+      - "race"
+      - "sex"
+      - "native-country"
