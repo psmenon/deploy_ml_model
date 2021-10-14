@@ -43,7 +43,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run dvc pull
       run: |
-        dvc pull
+        dvc pull -r s3remote
     - name: Test with pytest
       run: |
         pytest
