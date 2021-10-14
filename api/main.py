@@ -11,7 +11,7 @@ app = FastAPI()
 
 
 # Loading in model from serialized .pkl file
-base_path = os.path.dirname(os.getcwd())
+base_path = os.getcwd()
 
 file = os.path.join(base_path,'config.yaml')
 

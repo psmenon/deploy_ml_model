@@ -11,7 +11,7 @@ data_columns = ['age', 'workclass', 'fnlgt', 'education', 'education-num',
                 'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',
                 'salary']
 
-base_path = os.path.dirname(os.getcwd())
+base_path = os.getcwd()
 file = os.path.join(base_path,'config.yaml')
 
 with open(file) as f:
