@@ -28,6 +28,8 @@ Bias may be present in the model. The data may have been collected from several 
 
 ## Caveats and Recommendations
 Only random forest model was tried on the data.Other models may work better
+
 No hyperparameter tuning was done and should be performed to get a better model
+
 Use Aequitas to check if bias is present in the model
 
