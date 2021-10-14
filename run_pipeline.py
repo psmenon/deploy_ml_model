@@ -56,7 +56,11 @@ def main(config: DictConfig):
     
    
     dump(model,os.path.join(root_path,"model",f"{model_name}_{version}.pkl"))
-    logging.info("pkl generated")
+    dump(encoder,os.path.join(root_path,"model",f"encoder_{version}.pkl"))
+    dump(lb,os.path.join(root_path,"model",f"lb_{version}.pkl"))
+         
+         
+    logging.info("pkls generated")
     
 if __name__  == "__main__":
     main()
