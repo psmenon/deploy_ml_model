@@ -18,12 +18,13 @@ data = {
   "native-country": "United-States"
 }
 
-response = requests.post(' https://udacity-ml-deploy.herokuapp.com/predict',data=json.dumps(data))
+response = requests.post('https://udacity-ml-deploy.herokuapp.com/predict',data=json.dumps(data))
 
 if response.status_code == 200:
+    print(f'Status code of request {response.status_code}')
     if json.loads(response.content) == 1:
         print('Salary >50k')
     else:
         print('salary <=50k')  
 else:
-    print(f'Status code {response.status_code} raised')
+    print(f'Failed with status code {response.status_code}')

@@ -7,6 +7,7 @@ In this project we use data science to determine whether a person makes over 50K
 
 
 ## Files in Repository
+```
 * data
     * raw
        * census.csv.dvc
@@ -27,10 +28,29 @@ In this project we use data science to determine whether a person makes over 50K
    * test_api.py
 * metrics
    * rfmodel_0.0.1.results
+* screenshots
+  * continous_deployment.png
+  * dvcdag.png
+  * example.png
+  * live_get.png
+  * live_post.png
 * run_pipeline.py
 * config.yaml
 * model_card.md
 * setup.py
 * README.md
+```
 
+## Usage
 
+```python
+modify liveAPI_testing.py with your data and run
+
+python liveAPI_testing.py
+```
+
+```bash
+store data in a file called test.json (check liveAPI folder for format) and run
+
+curl --request POST --header 'Content-Type: application/json' --data @test.json --url  https://udacity-ml-deploy.herokuapp.com/predict
+```
