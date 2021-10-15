@@ -36,20 +36,20 @@ lb = joblib.load(os.path.join(base_path,"model",f"lb_{version}.pkl"))
 
 
 class Census(BaseModel):
-    age: int
-    workclass: str
-    fnlgt: int
-    education: str
-    education_num: int = Field(alias='education-num')
-    marital_status: str = Field(alias="marital-status")
-    occupation: str
-    relationship: str
-    race: str
-    sex: str
-    capital_gain: str = Field(alias="capital-gain")
-    capital_loss: str = Field(alias="capital-loss")
-    hours_per_week: str = Field(alias="hours-per-week")
-    native_country: str = Field(alias="native-country")
+    age: int = Field(...,example=14)
+    workclass: str = Field(...,example='Private')
+    fnlgt: int = Field(...,example=45781)
+    education: str = Field(...,example='Masters')
+    education_num: int = Field(alias='education-num',example=14)
+    marital_status: str = Field(alias="marital-status",example='Never-married')
+    occupation: str = Field(...,example='Prof-Speciality')
+    relationship: str = Field(...,example='Not-in-family')
+    race: str = Field(...,example='White')
+    sex: str = Field(...,example='Male')
+    capital_gain: str = Field(alias="capital-gain",example=14567)
+    capital_loss: str = Field(alias="capital-loss",example=0)
+    hours_per_week: str = Field(alias="hours-per-week",example=40)
+    native_country: str = Field(alias="native-country",example='India')
  
 
 @app.get("/")
