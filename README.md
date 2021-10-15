@@ -9,31 +9,31 @@ In this project we use data science to determine whether a person makes over 50K
 ## Files in Repository
 ```
 * data
-    * raw
+     * raw
        * census.csv.dvc
-    * prepared
+     * prepared
        * cleaned_census.csv.dvc
 * api
-    * main.py
+     * main.py
 * model
      * rfmodel_0.0.1.pkl.dvc
      * lb_0.0.1.pkl.dvc
      * encoder_0.0.1.pkl.dvc
 * src
-    * evaulate.py
-    * prepare.py
-    * train.py
+     * evaulate.py
+     * prepare.py
+     * train.py
 * test
-   * test_model.py
-   * test_api.py
+     * test_model.py
+     * test_api.py
 * metrics
-   * rfmodel_0.0.1.results
+     * rfmodel_0.0.1.results
 * screenshots
-  * continous_deployment.png
-  * dvcdag.png
-  * example.png
-  * live_get.png
-  * live_post.png
+    * continous_deployment.png
+    * dvcdag.png
+    * example.png
+    * live_get.png
+    * live_post.png
 * run_pipeline.py
 * config.yaml
 * model_card.md
@@ -44,7 +44,7 @@ In this project we use data science to determine whether a person makes over 50K
 ## Usage
 
 ```python
-modify liveAPI_testing.py with your data and run
+Modify liveAPI_testing.py with your data and run
 
 python liveAPI_testing.py
 ```
