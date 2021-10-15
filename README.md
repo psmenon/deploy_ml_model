@@ -43,14 +43,14 @@ In this project we use data science to determine whether a person makes over 50K
 
 ## Usage
 
-```python
 Modify liveAPI_testing.py with your data and run
 
+```python
 python liveAPI_testing.py
 ```
 
-```bash
-store data in a file called test.json (check liveAPI folder for format) and run
+Store data in a file called test.json (check liveAPI folder for format) and run
 
+```bash
 curl --request POST --header 'Content-Type: application/json' --data @test.json --url  https://udacity-ml-deploy.herokuapp.com/predict
 ```
