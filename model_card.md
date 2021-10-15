@@ -19,6 +19,10 @@ The data was split such that 80% of data was used in the training process and th
 
 
 ## Metrics
+precision: calculated as (number of true positives) / (number of labels with positive predictions)
+recall: calculated as (number of true positives) / (number of labels with real positive )
+fbeta: the weighted harmonic mean of precision and recall
+
 Navigate to the metrics folder to get the precision,recall and fbeta score on the various slices of the data
 
 
