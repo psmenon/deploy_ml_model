@@ -34,6 +34,7 @@ In this project we use data science to determine whether a person makes over 50K
     * example.png
     * live_get.png
     * live_post.png
+    * continous_integration.png     
 * run_pipeline.py
 * config.yaml
 * model_card.md
